@@ -216,19 +216,31 @@ a:hover
   display: none;
 
   .close{
+    position: absolute;
+    right: 50px;
+    width: 30px;
+    top: 30px;
+    height: 30px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+
     span{
       display: inline-block;
       width: 20px;
       height: 2px;
       background-color: black;
       position: absolute;
-      left: 88%;
-      top:10%;
+      left: 50%;
+      top: 50%;
       &:first-child{
-        transform: rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
       }
       &:last-child{
-        transform: rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-45deg);
       }
     }
   }
@@ -262,6 +274,7 @@ a:hover
     width: 200px;
     transition-duration: 0.2s;
     text-align: center;
+    box-shadow: none;
     &::placeholder{
       color: RGBA(202, 230, 228, 1.00);
       font-family: Roboto;

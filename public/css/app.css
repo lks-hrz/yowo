@@ -10192,6 +10192,22 @@ a:hover {
   display: none;
 }
 
+.logreg_pop .close,
+.login .close,
+.register .close {
+  position: absolute;
+  right: 50px;
+  width: 30px;
+  top: 30px;
+  height: 30px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+
 .logreg_pop .close span,
 .login .close span,
 .register .close span {
@@ -10200,22 +10216,22 @@ a:hover {
   height: 2px;
   background-color: black;
   position: absolute;
-  left: 88%;
-  top: 10%;
+  left: 50%;
+  top: 50%;
 }
 
 .logreg_pop .close span:first-child,
 .login .close span:first-child,
 .register .close span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .logreg_pop .close span:last-child,
 .login .close span:last-child,
 .register .close span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .logreg_pop h2,
@@ -10263,6 +10279,8 @@ a:hover {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   text-align: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .logreg_form input::-webkit-input-placeholder {
