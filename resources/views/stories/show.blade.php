@@ -6,17 +6,19 @@
     <div class="container">
         <div class="content_cnt">
             <div class="story_user_cnt">
-                <div class="user_tn">
-                    <img class="profilepic_tn" src="/img/mann.jpeg" alt="Profilbild">
-                    <h3 class="uname_tn">Max Musterman</h3>
-                </div>
+                <a href="{{ route('showuser') }}">
+                    <div class="user_tn">
+                        <img class="profilepic_tn" src="/img/mann.jpeg" alt="Profilbild">
+                        <h3 class="uname_tn">Max Musterman</h3>
+                    </div>
+                </a>
                 <div class="story_stats">
                     <p>37289 miles in air</p>
                     <p>48 hours in air</p>
                     <p>1,3 times to the moon</p>
                 </div>
             </div>
-            <h2 class="story_city">Paris</h2>
+            <a href="{{ route('showcity') }}"><h2 class="story_city">Paris</h2></a>
             <div class="story_answer">
                 <div class="answer_pair">
                     <p>From airport to city</p>

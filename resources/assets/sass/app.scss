@@ -22,7 +22,7 @@ a{
 .homenavbar {
   height: 61px;
   width: 100vw;
-  background: linear-gradient(RGBA(202, 230, 228, 0.8), RGBA(202, 230, 228, 0.1));
+  background: RGBA(202, 230, 228, 1.00);
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -30,19 +30,13 @@ a{
   z-index: 99;
 }
 
-.navbar {
-  height: 61px;
-  width: 100vw;
-  background: RGBA(202, 230, 228, 1.00);
-  position: fixed;
-}
 
 .logo {
-  height: 55px;
+  height: 45px;
 }
 
 h1{
-  padding-top: 10px;
+  padding-top: 6px;
   font-size: 31px;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -163,7 +157,7 @@ a:hover
 }
 
 #menu{
-  a{
+  .menu_item{
     padding: 20px;
     font-size: 22px;
     text-align: center;

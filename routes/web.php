@@ -15,5 +15,6 @@ Route::get('/', ['uses' => 'HomeController@root', 'as' => 'root']);
 Route::get('/home', ['uses' => 'HomeController@home', 'as' => 'home']);
 
 Route::get('/story', ['uses' => 'StoryController@show', 'as' => 'showstory']);
-Route::get('/city', ['uses' => 'CityController@show', 'as' => 'show']);
+Route::get('/city', ['uses' => 'CityController@show', 'as' => 'showcity']);
 
+Route::get('/user', ['uses' => 'UserController@show', 'as' => 'showuser']);

@@ -21,13 +21,13 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <button class="bright_button login_btn">Log In</button>
-                <button class="dark_button register_btn">Register</button>
-                <a class="menu_link" href="#"><li>Your World</li></a>
-                <div class="menu_line"></div>
-                <a class="menu_link" href="#"><li>Your Stats</li></a>
-                <div class="menu_line"></div>
-                <a class="menu_link" href="#"><li>Your Stories</li></a>
+                <li><button class="bright_button login_btn">Log In</button></li>
+                <li><button class="dark_button register_btn">Register</button></li>
+                <li class="menu_item"><a class="menu_link" href="#">Your World</a></li>
+                <li><span class="menu_line"></span></li>
+                <li class="menu_item"><a class="menu_link" href="#">Your Stats</a></li>
+                <li><span class="menu_line"></span></li>
+                <li class="menu_item"><a class="menu_link" href="#">Your Stories</a></li>
             </ul>
         </div>
     </nav>

@@ -10006,8 +10006,7 @@ a {
 .homenavbar {
   height: 61px;
   width: 100vw;
-  background: -webkit-gradient(linear, left top, left bottom, from(RGBA(202, 230, 228, 0.8)), to(RGBA(202, 230, 228, 0.1)));
-  background: linear-gradient(RGBA(202, 230, 228, 0.8), RGBA(202, 230, 228, 0.1));
+  background: RGBA(202, 230, 228, 1);
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10019,19 +10018,12 @@ a {
   z-index: 99;
 }
 
-.navbar {
-  height: 61px;
-  width: 100vw;
-  background: RGBA(202, 230, 228, 1);
-  position: fixed;
-}
-
 .logo {
-  height: 55px;
+  height: 45px;
 }
 
 h1 {
-  padding-top: 10px;
+  padding-top: 6px;
   font-size: 31px;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -10141,7 +10133,7 @@ a:hover {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu a {
+#menu .menu_item {
   padding: 20px;
   font-size: 22px;
   text-align: center;

@@ -7,7 +7,7 @@
         <div class="content_cnt">
             <h2 class="city_heading">Paris</h2>
             <div class="city_questions">
-
+                <p>TODO Question answer diagram</p>
             </div>
             <h3 class="heading">Stories</h3>
         </div>
