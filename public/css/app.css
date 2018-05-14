@@ -10279,8 +10279,7 @@ a:hover {
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   text-align: center;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-appearance: none;
 }
 
 .logreg_form input::-webkit-input-placeholder {
