@@ -5,7 +5,7 @@
 
     <div class="container">
         <div class="content_cnt">
-            <div class="story_user_cnt">
+            <div class="user_cnt">
                 <a href="{{ route('showuser') }}">
                     <div class="user_tn">
                         <img class="profilepic_tn" src="/img/mann.jpeg" alt="Profilbild">

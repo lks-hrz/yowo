@@ -393,7 +393,7 @@ a:hover
   font-family: Roboto;
   font-size: 18px;
   padding: 20px 0;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .city_heading{
@@ -412,6 +412,9 @@ input {
   border-radius: 25px;
   height: 35px;
   border: 1px solid RGBA(202, 230, 228, 1);
+  input{
+    margin-left: 20px;
+  }
 }
 
 // Post Thumbnail
@@ -425,7 +428,7 @@ input {
   padding: 20px 20px 0 20px;
   display: flex;
   align-items: center;
-  h3{
+  h3, h2{
     padding-left: 25px;
   }
 }
@@ -463,7 +466,7 @@ input {
 
 //Story View
 
-.story_user_cnt{
+.user_cnt{
   background-color: RGBA(151, 183, 189, 0.1);
 
 
@@ -524,5 +527,77 @@ input {
 .city_questions{
   height: 300px;
   background-color: RGBA(151, 183, 189, 0.1);
+}
+
+.stats_tn{
+  background-color: RGBA(151, 183, 189, 0.1);
+  .answer_pair{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    p{
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+}
+
+//User Settings
+
+.settings_tn{
+  background-color: RGBA(151, 183, 189, 0.1);
+  &__pair{
+    padding: 10px;
+    p{
+      &:first-child{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 200;
+      }
+      &:nth-child(2){
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 100;
+        font-style: italic;
+      }
+
+    }
+    span{
+      width: 100%;
+      height: 1px;
+      background-color: RGBA(202, 230, 228, 1.00);
+      display: block;
+    }
+  }
+}
+
+.logout_button{
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 80px;
+}
+
+//Your Stats
+
+.stats{
+  background-color: RGBA(151, 183, 189, 0.1);
+  padding: 20px;
+  margin-bottom: 80px;
+  h4{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+  &__pair{
+    display: flex;
+    justify-content: space-between;
+    p{
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
 }
 

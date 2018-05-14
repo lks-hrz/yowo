@@ -23,11 +23,11 @@
             <ul id="menu">
                 <li><button class="bright_button login_btn">Log In</button></li>
                 <li><button class="dark_button register_btn">Register</button></li>
-                <li class="menu_item"><a class="menu_link" href="#">Your World</a></li>
+                <li class="menu_item"><a class="menu_link" href="yourworld">Your World</a></li>
                 <li><span class="menu_line"></span></li>
-                <li class="menu_item"><a class="menu_link" href="#">Your Stats</a></li>
+                <li class="menu_item"><a class="menu_link" href="yourstats">Your Stats</a></li>
                 <li><span class="menu_line"></span></li>
-                <li class="menu_item"><a class="menu_link" href="#">Your Stories</a></li>
+                <li class="menu_item"><a class="menu_link" href="yourstories">Your Stories</a></li>
             </ul>
         </div>
     </nav>

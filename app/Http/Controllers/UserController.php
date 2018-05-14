@@ -11,4 +11,24 @@ class UserController extends Controller
         return view('users.show');
 
     }
+
+    public function showSettings()
+    {
+        return view('users.showSettings');
+    }
+
+    public function yourWorld()
+    {
+        return view('users.yourWorld');
+    }
+
+    public function yourStats()
+    {
+        return view('users.yourStats');
+    }
+
+    public function yourStories()
+    {
+        return view('users.yourStories');
+    }
 }

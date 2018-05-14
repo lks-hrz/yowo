@@ -16,7 +16,7 @@
                 <img class="profilepic_tn" src="/img/mann.jpeg" alt="Profilbild">
                 <h3 class="uname_tn">Max Musterman</h3>
             </div>
-            <a href="{{ route('show') }}">
+            <a href="{{ route('showstory') }}">
                 <h4 class="post_tn_heading">One night in Paris</h4>
                 <img src="/img/eifelturm.jpeg" alt="" class="post_tn_img">
                 <p class="post_tn_txt">Lemon drops macaroon croissant pastrymarzipan icing cupcake.Cake marzipan cookie danish halvah.</p>
