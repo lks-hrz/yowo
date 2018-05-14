@@ -1,0 +1,491 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600");
+
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html{
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.homenavbar {
+  height: 61px;
+  width: 100vw;
+  background: linear-gradient(RGBA(202, 230, 228, 0.8), RGBA(202, 230, 228, 0.1));
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 99;
+}
+
+.navbar {
+  height: 61px;
+  width: 100vw;
+  background: RGBA(202, 230, 228, 1.00);
+  position: fixed;
+}
+
+.logo {
+  height: 55px;
+}
+
+h1{
+  padding-top: 10px;
+  font-size: 31px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  z-index: 2;
+  transition: transform .3s ease, opacity .3s ease;
+
+  &.hide {
+    opacity:0;
+    transform: translateY(-25px);
+  }
+}
+
+//Burger Menu
+
+
+
+a:hover
+{
+  color: RGBA(151, 183, 189, 1.00);
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 4px;
+  z-index: 1;
+  padding: 10px 0;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: RGBA(89, 84, 90, 1.00);
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: RGBA(202, 230, 228, 1.00);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -220px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #fff;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu{
+  a{
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    transition: color 0.3s ease;
+    color: RGBA(89, 84, 90, 1.00);
+  }
+
+  button{
+    margin: 20px 20px;
+    text-align: center;
+
+  }
+  .menu_line{
+    width: 152px;
+    height: 1px;
+    background: RGBA(202, 230, 228, 1.00);
+    margin: 0 auto;
+  }
+}
+
+
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.hero{
+  background-image: url("/img/plain_map.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+
+.logreg_pop, .login, .register{
+  width: 80vw;
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  border: 1px solid RGBA(202, 230, 228, 1.00);
+  border-radius: 5px;
+  top: 25%;
+  left: 11%;
+  display: none;
+
+  .close{
+    span{
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      left: 88%;
+      top:10%;
+      &:first-child{
+        transform: rotate(45deg);
+      }
+      &:last-child{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 31px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    z-index: 2;
+  }
+
+  button {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.logreg_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input{
+    border: 1px solid RGBA(202, 230, 228, 1.00);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 200px;
+    transition-duration: 0.2s;
+    text-align: center;
+    &::placeholder{
+      color: RGBA(202, 230, 228, 1.00);
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 100;
+      text-align: center;
+    }
+    &:focus{
+      width: 250px;
+      outline: none;
+    }
+  }
+}
+.nav_search {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  transition: opacity .3s ease;
+  transform: translate(-50%, -50%);
+}
+.nav_search.home{
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+.bright_button{
+  border: 1px solid RGBA(202, 230, 228, 1);
+  border-radius: 25px;
+  background-color: #fff;
+  width: 150px;
+  color: RGBA(202, 230, 228, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.dark_button{
+  border: 1px solid RGBA(151, 183, 189, 1.00);
+  border-radius: 25px;
+  background-color: RGBA(151, 183, 189, 1.00);
+  width: 150px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.submit_button{
+  border: 1px solid RGBA(151, 183, 189, 1.00);
+  border-radius: 25px;
+  background-color: RGBA(151, 183, 189, 1.00);
+  width: 130px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.hero-button{
+  border: 1px solid RGBA(202, 230, 228, 1);
+  border-radius: 25px;
+  background-color: #fff;
+  width: 150px;
+  color: RGBA(202, 230, 228, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 100;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  z-index: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+.container{
+  background-color: white;
+  width: 98vw;
+  margin: 0 auto;
+}
+
+.content_cnt{
+  padding-top: 100px;
+}
+
+.heading{
+  font-family: Roboto;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 100;
+}
+
+.city_heading{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+input {
+  border: none;
+}
+
+.search{
+  background-color: white;
+  border-radius: 25px;
+  height: 35px;
+  border: 1px solid RGBA(202, 230, 228, 1);
+}
+
+// Post Thumbnail
+
+.post_tn{
+  background-color: RGBA(151, 183, 189, 0.1);
+}
+
+.user_tn{
+  padding: 20px 20px 0 20px;
+  display: flex;
+  align-items: center;
+  h3{
+    padding-left: 25px;
+  }
+}
+
+.profilepic_tn{
+  height: 100px;
+  clip-path: circle(30px at 35px 35px);
+}
+
+.uname_tn{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.post_tn_heading{
+  font-family: Raleway;
+  font-size: 14px;
+  text-align: center;
+}
+
+.post_tn_img{
+  width: 82vw;
+  margin: 15px;
+}
+
+.post_tn_txt{
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 100;
+  width: 264px;
+  margin: 0 auto;
+}
+
+//Story View
+
+.story_user_cnt{
+  background-color: RGBA(151, 183, 189, 0.1);
+
+
+  .story_stats{
+    padding-left: 38%;
+    margin: -20px;
+    padding-bottom: 20px;
+    p{
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 100;
+      font-style: italic;
+      margin: 0;
+    }
+  }
+}
+
+.story_city{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.story_titel{
+  font-family: Raleway;
+  font-size: 14px;
+  padding: 30px 0;
+  font-weight: 600;
+}
+
+.story_answer{
+  background-color: RGBA(151, 183, 189, 0.1);
+  padding-top: 30px;
+
+  .answer_pair{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+
+.post_img{
+  width: 100%;
+  padding: 20px 0;
+}
+
+.story_txt {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.city_questions{
+  height: 300px;
+  background-color: RGBA(151, 183, 189, 0.1);
+}
+
