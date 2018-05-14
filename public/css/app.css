@@ -10006,7 +10006,7 @@ a {
 .homenavbar {
   height: 61px;
   width: 100vw;
-  background: RGBA(202, 230, 228, 1);
+  background: RGBA(202, 230, 228, 0.6);
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
