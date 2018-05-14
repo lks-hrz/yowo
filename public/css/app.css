@@ -10323,17 +10323,54 @@ a:hover {
   position: absolute;
   opacity: 1;
   visibility: visible;
+  width: 200px;
   top: 50%;
   left: 50%;
   -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_search input {
+  background-color: white;
+  border-radius: 25px;
+  height: 30px;
+  border: 1px solid RGBA(202, 230, 228, 1);
 }
 
 .nav_search.home {
   opacity: 0;
   visibility: hidden;
+}
+
+.plus {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding-top: 15px;
+}
+
+.plus span {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  display: block;
+}
+
+.plus span:last-child {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .bright_button {
@@ -10423,6 +10460,7 @@ input {
 
 .post_tn {
   background-color: RGBA(151, 183, 189, 0.1);
+  margin-bottom: 50px;
 }
 
 .user_tn {
@@ -10468,6 +10506,7 @@ input {
   font-weight: 100;
   width: 264px;
   margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 .story_user_cnt {

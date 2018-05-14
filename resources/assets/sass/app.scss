@@ -293,15 +293,42 @@ a:hover
   position: absolute;
   opacity: 1;
   visibility: visible;
+  width: 200px;
   top: 50%;
   left: 50%;
   transition: opacity .3s ease;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input{
+    background-color: white;
+    border-radius: 25px;
+    height: 30px;
+    border: 1px solid RGBA(202, 230, 228, 1);
+  }
 }
 .nav_search.home{
   opacity: 0;
   visibility: hidden;
 
+}
+
+.plus{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding-top: 15px;
+  span{
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    display: block;
+    &:last-child{
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .bright_button{
@@ -397,6 +424,7 @@ input {
 
 .post_tn{
   background-color: RGBA(151, 183, 189, 0.1);
+  margin-bottom: 50px;
 }
 
 .user_tn{
@@ -436,6 +464,7 @@ input {
   font-weight: 100;
   width: 264px;
   margin: 0 auto;
+  padding-bottom: 35px;
 }
 
 //Story View

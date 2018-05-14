@@ -5,7 +5,10 @@
     @endif
 
     <div class="nav_search @if(Route::is("home")) home @endif">
-        <span>+</span>
+        <div class="plus">
+            <span></span>
+            <span></span>
+        </div>
         <form action="">
             <input type="search">
         </form>
